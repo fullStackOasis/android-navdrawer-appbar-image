@@ -17,7 +17,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 public class MainActivity extends AppCompatActivity {
-
+    private String TAG = MainActivity.class.getCanonicalName();
     private AppBarConfiguration mAppBarConfiguration;
 
     @Override
@@ -45,6 +45,20 @@ public class MainActivity extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
+
+        addImageToAppBar();
+    }
+
+    /**
+     * Add your logo to the "Toolbar"
+     */
+    private void addImageToAppBar() {
+        // Note: Does not work! If you do this, there's no sign of the image anywhere.
+        // mAppBarConfiguration.getDrawerLayout().setStatusBarBackground(R.drawable
+        // .text_hello_world);
+        Toolbar tool_bar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(tool_bar);
+        tool_bar.setLogo(R.drawable.text_hello_world);
     }
 
     @Override
