@@ -5,3 +5,11 @@ To start an Android project using a Navigation Drawer, open Android Studio, choo
 Here's a screenshot of what the app looks like to start with:
 
 <img src="https://github.com/fullStackOasis/android-navdrawer-appbar-image/raw/main/Screenshot_20210206-134217_AppBarImageDemo.jpg" height="600"/>
+
+# Toolbar image
+
+Here's a screenshot with the image added to the Toolbar:
+
+<img src="https://github.com/fullStackOasis/android-navdrawer-appbar-image/raw/main/Screenshot_20210206-142646_AppBarImageDemo.jpg" height="600"/>
+
+
